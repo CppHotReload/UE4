@@ -25,16 +25,9 @@ For any other question: contact AT hotreload.tech or file an issue here in GitHu
 * v0.9.96 - Change Class Structure UProperty: https://www.youtube.com/watch?v=y-cGRAY0OLY
 * v0.9.96 - Reload NON UProperty, private variables: https://www.youtube.com/watch?v=G9WnryVNDDA
 
-# Full Download
-To know more and download the latest stable version 0.9.95 and examples of how to integrate C++ Hot Reload in your custom engine visit us on www.hotreload.tech and enter your data and email to receive your own Community Version license key.
-
 # Support
+* UE4.23 and UE4.24
 * Windows, testd on Visual Studio 2017 and 2019
 * macOS, Xcode latest version
 * iOS, Android and consoles (will not be integrated in the Community Plugin)
 * Only 64bits
-
-# C++ support
-C++17, works! If you find any problem, please file an issue here.
-
-**This repository will hold the development of the Community UE4 version for C++ Hot Reload.**
