@@ -15,7 +15,12 @@ C++ Hot Reload is a plugin that allows the Unreal Editor to detect modified **cl
 
 ## Installation
 * Install the plugin using the UE marketplace
-* The default mode doesn't use PCH for compatibility, **however if you want to reload your files in the gap of 2 or less** define CPP_HOT_RELOAD_PCH_NAME or modify CppHotReloadConfig.h adding #define CPP_HOT_RELOAD_PCH_NAME "Test.h", or whatever you defined as PrivatePCHHeaderFile in your game Build.cs. Add PrivatePCHHeaderFile = "NAME_OF_YOUR_PCH.h"; and use it in your source code
+* Configure the PCH file for faster builds
+  * The default mode doesn't use PCH for compatibility, 
+  * **however if you want to reload your files in the gap of a couple of seconds** modify CppHotReloadConfig.h 
+  * Add the line #define CPP_HOT_RELOAD_PCH_NAME "Test.h"
+  * Change "Test.h" to fit what you has been defined as PrivatePCHHeaderFile in your game Build.cs. 
+  * If you don't have that variable defined, add PrivatePCHHeaderFile = "NAME_OF_YOUR_PCH.h"; and use it in your source code
 
 ## Understanding the status bar 
 * ![Image of waiting](https://github.com/CppHotReload/UE4/blob/master/images/ToolBar_Icon_40_waiting.png?raw=true) Waiting for the user save a file 
