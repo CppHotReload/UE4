@@ -6,10 +6,10 @@ C++ Hot Reload is a plugin that allows the Unreal Editor to detect modified **cl
 ![Image of Status button](https://github.com/CppHotReload/UE4/blob/master/images/toolbar.jpg?raw=true)
 
 # Support
-* UE4.23 and UE4.24
+* UE4.23, UE4.24 and UE4.25
 * Supports macOS and Win64
    * Windows, testd on Visual Studio 2017 and 2019
-   * macOS, Xcode latest version
+   * macOS, Xcode latest version (compatibility mode right now, it's "slow")
 * Only 64bits
 * PCH based for fast reload, even .h files changing the classes layouts it's able to reload in the gap of 2 seconds
 
