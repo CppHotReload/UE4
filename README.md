@@ -13,6 +13,10 @@ C++ Hot Reload is a plugin that allows the Unreal Editor to detect modified **cl
 * Only 64bits
 * PCH based for fast reload, even .h files changing the classes layouts it's able to reload in the gap of 2 seconds
 
+# UE4 classes tested
+* ActorComponent
+* SceneComponent
+
 ## Installation
 * Install the plugin using the UE marketplace
 * For even faster hot reloads tell C++ Hot Reload the name of your PCH file
