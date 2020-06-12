@@ -47,6 +47,7 @@ For any other question: contact AT hotreload.tech or file an issue here in GitHu
 
 # Test projects
 ## 1000 simple components
+Located in: https://github.com/CppHotReload/UE4/tree/master/samples/Projects/Shooter
 ```cpp
 //
 // Test 1000 simple components, without dependencies or dependents
