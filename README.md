@@ -40,7 +40,40 @@ https://discord.gg/9gsaNnD
 For any other question: contact AT hotreload.tech or file an issue here in GitHub
 # Videos
 * What's C++ Hot Reload: https://www.youtube.com/watch?v=_k5E0Fh5lJo
+* v0.9.98 - Multi-thread processing of files for non-blocking loading 
 * v0.9.97 - Speed up reload time to only 2 seconds using PCH and macOS support: https://www.youtube.com/watch?v=461sRJIhvh4
 * v0.9.96 - Change Class Structure UProperty: https://www.youtube.com/watch?v=y-cGRAY0OLY
 * v0.9.96 - Reload NON UProperty, private variables: https://www.youtube.com/watch?v=G9WnryVNDDA
 
+# Test projects
+## 1000 simple components
+```cpp
+//
+// Test 1000 simple components, without dependencies or dependents
+// Note: the test adds a simple space in the file to trigger the reload
+//
+
+// Modifying a CPP file
+First change:  HotReload took 11.5s.
+Second change: HotReload took 10.5s.
+Third change:  HotReload took 12.5s.
+
+// Modifying a H file
+First change:  HotReload took 45.6s.
+Second change: HotReload took 22.4s.
+Third change:  HotReload took 22.0s.
+
+//
+// Using C++ Hot Reload
+//
+
+// Modifying a CPP file
+First change:  Reload time:  3.096 seconds
+Second change: Reload time:  3.38926 seconds
+Third change:  Reload time:  3.13823 seconds
+
+// Modifying a H file
+First change:  Reload time:  3.31908 seconds + 29s (Running Unreal Header Tool)
+Second change: Reload time:  3.51703 seconds + 10s (Running Unreal Header Tool)
+Third change:  Reload time:  3.48786 seconds + 7s  (Running Unreal Header Tool)
+```
