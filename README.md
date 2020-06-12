@@ -54,6 +54,10 @@ Located in: https://github.com/CppHotReload/UE4/tree/master/samples/Projects/Sho
 // Note: the test adds a simple space in the file to trigger the reload
 //
 
+//
+// Using UE4 reload (Compile button in the editor)
+//
+
 // Modifying a CPP file
 First change:  HotReload took 11.5s.
 Second change: HotReload took 10.5s.
