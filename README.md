@@ -5,28 +5,21 @@ C++ Hot Reload is a plugin that allows the Unreal Editor to detect modified **cl
 ![Image of Status button](https://github.com/CppHotReload/UE4/blob/master/images/toolbar.jpg?raw=true)
 
 [![RESUME](https://j.gifs.com/p8D3ON.gif)](https://www.youtube.com/watch?v=_k5E0Fh5lJo)
+### https://www.hotreload.tech
 
 # Support
+* Reload header files
+* No matter how big is your project, you'll reload only the modified files
 * UE4.23, UE4.24 and UE4.25
 * Supports macOS and Win64
    * Windows, testd on Visual Studio 2017 and 2019
    * macOS, Xcode latest version (compatibility mode right now, it's "slow")
 * Only 64bits
-* PCH based for fast reload, even .h files changing the classes layouts it's able to reload in the gap of 2 seconds
-
-## UE4 classes tested
-Enter in the Discord channel and send your sample class to get support!
-* ActorComponent
-* SceneComponent
+* PCH based for fast reload, even .h files changing the classes layouts it's able to reload in the gap of seconds
 
 ## Installation
 * Install the plugin using the UE marketplace
-* For even faster hot reloads tell C++ Hot Reload the name of your PCH file
-  * The default mode doesn't use PCH for compatibility.
-  * However **if you want to reload your files in the gap of a couple of seconds** modify CppHotReloadConfig.h 
-  * Add the line #define CPP_HOT_RELOAD_PCH_NAME "Test.h"
-  * Change "Test.h" to fit what you has been defined as PrivatePCHHeaderFile in your game Build.cs. 
-  * If you don't have that variable defined, add PrivatePCHHeaderFile = "NAME_OF_YOUR_PCH.h"; and use it in your source code
+* The plugin will auto-configure it self with your target project
 
 ## Understanding the status bar 
 * ![Image of waiting](https://github.com/CppHotReload/UE4/blob/master/images/ToolBar_Icon_40_waiting.png?raw=true) Waiting for the user save a file 
@@ -47,6 +40,12 @@ For any other question: contact AT hotreload.tech or file an issue here in GitHu
 * v0.9.96 - Reload NON UProperty, private variables: https://www.youtube.com/watch?v=G9WnryVNDDA
 
 # Test projects
+
+## UE4 classes tested here
+Enter in the Discord channel and send your sample class to get support!
+* ActorComponent
+* SceneComponent
+
 ## 1000 simple components
 Located in: https://github.com/CppHotReload/UE4/tree/master/samples/Projects/Shooter
 ```cpp
