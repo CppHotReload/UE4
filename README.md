@@ -18,8 +18,9 @@ C++ Hot Reload is a plugin that allows the Unreal Editor to detect modified **cl
 * PCH based for fast reload, even .h files changing the classes layouts it's able to reload in the gap of seconds
 
 ## Installation
-* Install the plugin using the UE marketplace
-* The plugin will auto-configure it self with your target project
+1. Install the plugin using the UE marketplace
+2. The plugin will auto-configure it self with your target project
+3. Recommendation: deactivate Edit and Continue in Visual Studio: https://docs.microsoft.com/en-us/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2019
 
 ## Understanding the status bar 
 * ![Image of waiting](https://github.com/CppHotReload/UE4/blob/master/images/ToolBar_Icon_40_waiting.png?raw=true) Waiting for the user save a file 
