@@ -45,6 +45,7 @@ Enter in the Discord channel and send your sample class to get support!
 * SceneComponent
 
 ## 1000 simple components
+First off, my machine: Corei7-4790 CPU @ 3.60GHz, 3601 Mhz, 4 Core(s), 8 Logical Processor(s) - and the project in a SSD (Samsung 860 EVO). A very common and normal machine nowdays.
 Located in: https://github.com/CppHotReload/UE4/tree/master/samples/Projects/Shooter
 ```cpp
 //
