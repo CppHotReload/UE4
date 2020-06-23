@@ -13,6 +13,7 @@ C++ Hot Reload is a plugin that allows the Unreal Editor to detect modified **cl
 * No matter how big is your project, you'll reload only the modified files
 * Supports macOS and Windows using 64bits
 * PCH based for fast reload, even .h files changing the classes layouts it's able to reload in the gap of seconds
+* See how to speed up macOS builds (~40%) in the section below
 
 ## Installation
 1. Install the plugin using the UE marketplace
@@ -49,7 +50,7 @@ First off, my machine: Corei7-4790 CPU @ 3.60GHz, 3601 Mhz, 4 Core(s), 8 Logical
 Located in: https://github.com/CppHotReload/UE4/tree/master/samples/Projects/Shooter
 ```cpp
 //
-// Test 1000 simple components, without dependencies or dependents
+// Test 1000 simple components, without dependencies or dependents on Win64
 // Note: the test adds a simple space in the file to trigger the reload
 //
 
@@ -81,3 +82,8 @@ First change:  Reload time:  3.31908 seconds + 29s (Running Unreal Header Tool)
 Second change: Reload time:  3.51703 seconds + 10s (Running Unreal Header Tool)
 Third change:  Reload time:  3.48786 seconds + 7s  (Running Unreal Header Tool)
 ```
+
+# How to speed up macOS builds
+* Traditionally LLVM is faster than MSVC, however due to the configuration of a big pch file for mac, "gch" and the nature of how slow it's clang using a gch there is not much I can do here, at least at the moment.
+* You can cut around 10 seconds if you don't generate dSYM files but this will affect to your debugging capabilities
+* Go to the file CppHotReloadConfig.h and set CPP_HOT_RELOAD_SPEED_UP_ON_MACOS to 1
