@@ -3,7 +3,7 @@
 
 UIsolatedComponent0000::UIsolatedComponent0000()
 {
-	PrimaryComponentTick.bCanEverTick = true;   
+	PrimaryComponentTick.bCanEverTick = true;     
 	MovementRadius = 0.0f;
 }
 
@@ -20,8 +20,8 @@ void UIsolatedComponent0000::BeginPlay()
 }
 
 void UIsolatedComponent0000::Gurke()    
-{         
-	//UE_LOG(LogTemp, Warning, TEXT("C++ Hot Reload [gurke]: %f"), gurke);        
+{
+	//UE_LOG(LogTemp, Warning, TEXT("C++ Hot Reload [MovementRadius]: %f"), MovementRadius);
 }
 
 void UIsolatedComponent0000::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -30,7 +30,7 @@ void UIsolatedComponent0000::TickComponent(float DeltaTime, ELevelTick TickType,
 
 	AActor* Parent = GetOwner(); 
 	if (Parent) 
-	{      
+	{    
 		Parent->SetActorLocation( 
 			Parent->GetActorLocation() + 
 			FVector( 
