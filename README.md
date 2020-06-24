@@ -89,4 +89,4 @@ Third change:  Reload time:  3.48786 seconds + 7s  (Running Unreal Header Tool)
 * You can cut around 10 seconds if you don't generate dSYM files but this will affect to your debugging capabilities
 * Go to the file CppHotReloadConfig.h and set CPP_HOT_RELOAD_SPEED_UP_ON_MACOS to 1
 
-* ![macOSv0.9.98.3](https://github.com/CppHotReload/UE4/blob/master/macOSv0.9.98.3.png?raw=true)
+* ![macOSv0.9.98.3](https://github.com/CppHotReload/UE4/raw/master/images/macOSv0.9.98.3.png)
