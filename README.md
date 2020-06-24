@@ -84,6 +84,9 @@ Third change:  Reload time:  3.48786 seconds + 7s  (Running Unreal Header Tool)
 ```
 
 # How to speed up macOS builds
+* IMPORTANT NOTE: new upcoming version v0.9.98.3 reduce in macOS the build time to 6.8s vs 23.2s (UE4)
 * Traditionally LLVM is faster than MSVC, however due to the configuration of a big pch file for mac, "gch" and the nature of how slow it's clang using a gch there is not much I can do here, at least at the moment.
 * You can cut around 10 seconds if you don't generate dSYM files but this will affect to your debugging capabilities
 * Go to the file CppHotReloadConfig.h and set CPP_HOT_RELOAD_SPEED_UP_ON_MACOS to 1
+
+* ![macOSv0.9.98.3](https://github.com/CppHotReload/UE4/blob/master/macOSv0.9.98.3.png?raw=true)
