@@ -33,6 +33,7 @@ https://discord.gg/9gsaNnD
 For any other question: contact AT hotreload.tech or file an issue here in GitHub
 # Videos
 * What's C++ Hot Reload: https://www.youtube.com/watch?v=_k5E0Fh5lJo
+* v0.9.98.3 - Multi-thread compilation for macOS (huge speed up) and Win64 (not much speed up)
 * v0.9.98 - Multi-thread processing of files for non-blocking loading 
 * v0.9.97 - Speed up reload time to only 2 seconds using PCH and macOS support: https://www.youtube.com/watch?v=461sRJIhvh4
 * v0.9.96 - Change Class Structure UProperty: https://www.youtube.com/watch?v=y-cGRAY0OLY
@@ -84,7 +85,7 @@ Third change:  Reload time:  3.48786 seconds + 7s  (Running Unreal Header Tool)
 ```
 
 # How to speed up macOS builds
-* IMPORTANT NOTE: new upcoming version v0.9.98.3 reduce in macOS the build time to 6.8s vs 23.2s (UE4)
+* IMPORTANT NOTE: new upcoming version v0.9.98.3
 * Traditionally LLVM is faster than MSVC, however due to the configuration of a big pch file for mac, "gch" and the nature of how slow it's clang using a gch there is not much I can do here, at least at the moment.
 * You can cut around 10 seconds if you don't generate dSYM files but this will affect to your debugging capabilities
 * Go to the file CppHotReloadConfig.h and set CPP_HOT_RELOAD_SPEED_UP_ON_MACOS to 1
