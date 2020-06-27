@@ -3,3 +3,10 @@ samples/Projects/Shooter/Binaries/
 samples/Projects/Shooter/Intermediate/
 samples/Projects/Shooter/Plugins/
 samples/Projects/Shooter/Saved/
+samples/Projects/Shooter/Shooter.sln
+*.sln
+samples/Projects/Shooter - Test/Binaries/
+samples/Projects/Shooter - Test/Intermediate/
+samples/Projects/Shooter - Test/Plugins/
+samples/Projects/Shooter - Test/Saved/
+samples/Projects/Shooter - Test/Shooter.xcworkspace/
