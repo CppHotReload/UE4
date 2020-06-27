@@ -47,47 +47,27 @@ Enter in the Discord channel and send your sample class to get support!
 * SceneComponent
 
 ## 1000 simple components
-First off, my machine: Corei7-4790 CPU @ 3.60GHz, 3601 Mhz, 4 Core(s), 8 Logical Processor(s) - and the project in a SSD (Samsung 860 EVO). A very common and normal machine nowdays.
+Test machine for Win64: Corei7-4790 3.6 GHz, 3601 Mhz, 4 Cores - SSD 860 EVO
+Test machine for macOS: MBP 2018, Corei7 2.6 Ghz, 6 Cores - SSD
 Located in: https://github.com/CppHotReload/UE4/tree/master/samples/Projects/Shooter
 ```cpp
 //
-// Test 1000 simple components, without dependencies or dependents on Win64
-// Note: the test adds a simple space in the file to trigger the reload
-//
-
-//
-// Using UE4 reload (Compile button in the editor)
+// Test "1000 simple components", without dependencies or dependents
 //
 
 // Modifying a CPP file
-First change:  HotReload took 11.5s.
-Second change: HotReload took 10.5s.
-Third change:  HotReload took 12.5s.
+1st change, Win64: UE4 11.5s vs 3.0s | macOS: 35.2s vs 9.0s
+2nd change, Win64: UE4 10.5s vs 3.3s | macOS: 50.9s vs 8.6s
+3rd change, Win64: UE4 12.5s vs 3.1s | macOS: 45.3s vs 8.3s
 
-// Modifying a H file
-First change:  HotReload took 45.6s.
-Second change: HotReload took 22.4s.
-Third change:  HotReload took 22.0s.
+// Modifying a H file. + correspond to Unreal Header Tool
+1st change, Win64: UE4 45.6s vs 3.3s + 29s | macOS: 102.9s vs  9.2s + 10s
+2nd change, Win64: UE4 22.4s vs 3.5s + 10s | macOS:  70.3s vs  9.9s + 9s
+3rd change, Win64: UE4 22.0s vs 3.4s + 7s  | macOS:  65.9s vs 10.2s + 9s
 
-//
-// Using C++ Hot Reload
-//
-
-// Modifying a CPP file
-First change:  Reload time:  3.096 seconds
-Second change: Reload time:  3.38926 seconds
-Third change:  Reload time:  3.13823 seconds
-
-// Modifying a H file
-First change:  Reload time:  3.31908 seconds + 29s (Running Unreal Header Tool)
-Second change: Reload time:  3.51703 seconds + 10s (Running Unreal Header Tool)
-Third change:  Reload time:  3.48786 seconds + 7s  (Running Unreal Header Tool)
 ```
-
-# How to speed up macOS builds
-* IMPORTANT NOTE: new upcoming version v0.9.98.3
-* Traditionally LLVM is faster than MSVC, however due to the configuration of a big pch file for mac, "gch" and the nature of how slow it's clang using a gch there is not much I can do here, at least at the moment.
-* You can cut around 10 seconds if you don't generate dSYM files but this will affect to your debugging capabilities
-* Go to the file CppHotReloadConfig.h and set CPP_HOT_RELOAD_SPEED_UP_ON_MACOS to 1
-
 ![macOSv0.9.98.3](https://github.com/CppHotReload/UE4/raw/master/images/macOSv0.9.98.3.png)
+
+# About macOS
+* If you need to generate debug symbols to better inspection, go to the file CppHotReloadConfig.h and set CPP_HOT_RELOAD_SPEED_UP_ON_MACOS to 0
+
