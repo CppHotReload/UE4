@@ -49,7 +49,7 @@ Enter in the Discord channel and send your sample class to get support!
 ## 1000 simple components
 Test machine for Win64: Corei7-4790 3.6 GHz, 3601 Mhz, 4 Cores - SSD 860 EVO
 Test machine for macOS: MBP 2018, Corei7 2.6 Ghz, 6 Cores - SSD
-Located in: https://github.com/CppHotReload/UE4/tree/master/samples/Projects/Shooter
+Located in: https://github.com/CppHotReload/UE4/tree/master/samples/Projects/Shooter%20-%20Test
 ```cpp
 //
 // Test "1000 simple components", without dependencies or dependents
