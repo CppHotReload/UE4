@@ -1,3 +1,6 @@
+# Adquire the plugin in UE4 Marketplace!
+https://www.unrealengine.com/marketplace/en-US/product/c-hot-reload
+
 # C++ Hot Reload for Unreal Engine 4
 C++ Hot Reload is a plugin that allows the Unreal Editor to detect modified **classes** and build them automatically in background allowing you to **modify the headers files and the classes structures** for Windows and macOS. C++ Hot Reload will only build the modified files to speed up your work in large projects or plugins. 
 
