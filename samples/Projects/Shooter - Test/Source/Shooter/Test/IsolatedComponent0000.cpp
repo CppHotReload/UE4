@@ -21,7 +21,7 @@ void UIsolatedComponent0000::BeginPlay()
 
 void UIsolatedComponent0000::Gurke()    
 {
-	//UE_LOG(LogTemp, Warning, TEXT("C++ Hot Reload [MovementRadius]: %f"), MovementRadius);   
+	//UE_LOG(LogTemp, Warning, TEXT("C++ Hot Reload [MovementRadius]: %f"), MovementRadius);         
 }
 
 void UIsolatedComponent0000::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)

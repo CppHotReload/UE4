@@ -140,6 +140,7 @@ void AShooterCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 
 void AShooterCharacter::OnFire()
 {
+	Test();
 	// try and fire a projectile
 	if (ProjectileClass != NULL)
 	{
@@ -297,4 +298,9 @@ bool AShooterCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerI
 	}
 	
 	return false;
+}
+
+void AShooterCharacter::Test()
+{
+	UKismetSystemLibrary::PrintString(this, "1"); 
 }

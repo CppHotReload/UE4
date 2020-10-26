@@ -80,6 +80,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint32 bUsingMotionControllers : 1;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Test)
+	int TestVar = 22;
+
+	UFUNCTION(BlueprintCallable, Category = Test)
+	void Test();
+
 protected:
 	
 	/** Fires a projectile. */

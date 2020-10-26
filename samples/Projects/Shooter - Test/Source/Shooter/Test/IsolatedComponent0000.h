@@ -13,16 +13,15 @@ public:
 
 protected:
 	virtual void BeginPlay() override;      
-	virtual void Gurke();      
+	virtual void Gurke();       
 public:	  
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 protected:
 	UPROPERTY(EditAnywhere, Category = General)
-		float MovementRadius;
+	float MovementRadius; 
+	
 	UPROPERTY(EditAnywhere, Category = General)
-		float MovementRadius2;
-	UPROPERTY(EditAnywhere, Category = General)
-		float MovementRadius3;
+	float MovementRadius2; 
 };
     

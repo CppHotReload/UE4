@@ -1,12 +1,13 @@
 .vs
-samples/Projects/Shooter/Binaries/
-samples/Projects/Shooter/Intermediate/
-samples/Projects/Shooter/Plugins/
-samples/Projects/Shooter/Saved/
-samples/Projects/Shooter/Shooter.sln
+.idea
 *.sln
 samples/Projects/Shooter - Test/Binaries/
 samples/Projects/Shooter - Test/Intermediate/
 samples/Projects/Shooter - Test/Plugins/
 samples/Projects/Shooter - Test/Saved/
 samples/Projects/Shooter - Test/Shooter.xcworkspace/
+samples/Projects/Bugs/Binaries/
+samples/Projects/Bugs/Intermediate/
+samples/Projects/Bugs/Plugins/
+samples/Projects/Bugs/Saved/
+samples/Projects/Bugs/Shooter.xcworkspace/
