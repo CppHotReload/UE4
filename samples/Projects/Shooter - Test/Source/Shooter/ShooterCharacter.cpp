@@ -302,5 +302,5 @@ bool AShooterCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerI
 
 void AShooterCharacter::Test()
 {
-	UKismetSystemLibrary::PrintString(this, "1"); 
+	UKismetSystemLibrary::PrintString(this, "33333333333333333"); 
 }

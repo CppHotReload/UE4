@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.25",
+	"EngineAssociation": "4.26",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -18,10 +18,6 @@
 			"Name": "CppHotReload",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/1d0384cd6af04724afee42a87e61d39b"
-		},
-		{
-			"Name": "RiderLink",
-			"Enabled": true
 		}
 	]
 }

@@ -2,9 +2,8 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "CustomBlueprintFunctionLibrary.generated.h"
+#include "HotReloadBugs.h"
+#include "CustomBlueprintFunctionLibrary_IsFixed.generated.h"
 
 /**
  * 

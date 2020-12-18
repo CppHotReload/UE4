@@ -8,7 +8,8 @@ public class HotReloadBugsEditorTarget : TargetRules
 	public HotReloadBugsEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+		bUseUnityBuild = false;
+		bUsePCHFiles = true;
 		ExtraModuleNames.AddRange( new string[] { "HotReloadBugs" } );
 	}
 }

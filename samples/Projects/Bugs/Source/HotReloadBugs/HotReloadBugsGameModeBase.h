@@ -15,3 +15,4 @@ class HOTRELOADBUGS_API AHotReloadBugsGameModeBase : public AGameModeBase
 	GENERATED_BODY()
 	
 };
+ 

@@ -6,8 +6,8 @@ public class HotReloadBugs : ModuleRules
 {
 	public HotReloadBugs(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
+		PrivatePCHHeaderFile = "HotReloadBugs.h";
+
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
