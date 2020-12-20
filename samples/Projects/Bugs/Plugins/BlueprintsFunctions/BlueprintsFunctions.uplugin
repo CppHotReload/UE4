@@ -17,11 +17,7 @@
 		{
 			"Name": "BlueprintsFunctions",
 			"Type": "Runtime",
-			"LoadingPhase": "PreDefault",
-			"WhitelistPlatforms": [
-				"Win64",
-				"Mac"
-			]
+			"LoadingPhase": "PreDefault"
 		}
 	]
 }

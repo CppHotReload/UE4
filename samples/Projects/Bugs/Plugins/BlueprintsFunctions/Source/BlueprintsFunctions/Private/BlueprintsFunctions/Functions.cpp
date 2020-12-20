@@ -15,3 +15,8 @@ int UFunctions::Test2(float a, float b, float c)
 {
     return a + b + c;
 }
+
+FString UFunctions::Test3()
+{
+    return "Hello World";  
+}
