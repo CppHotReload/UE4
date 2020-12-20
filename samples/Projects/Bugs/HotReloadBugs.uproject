@@ -18,6 +18,11 @@
 			"Name": "CppHotReload",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/1d0384cd6af04724afee42a87e61d39b"
+		},
+		{
+			"Name": "BlueprintsFunctions",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/1d0384cd6af04724afee42a87e61d39b"
 		}
 	]
 }

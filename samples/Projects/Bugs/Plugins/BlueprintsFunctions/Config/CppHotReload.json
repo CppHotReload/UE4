@@ -1,0 +1,8 @@
+{
+	"PluginState": "Enable",
+	"CoresConfiguration": "AllCores",
+	"CompileMode": "CacheMode",
+	"ReloadMode": "UE4",
+	"SearchDependencies": "OnlyInCodeDirectories"
+
+}
