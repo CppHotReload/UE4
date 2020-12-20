@@ -16,4 +16,7 @@ class BLUEPRINTSFUNCTIONS_API UFunctions : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, Category = "Blueprints Functions|Test")
 	static void Test(); 
+
+	UFUNCTION(BlueprintCallable, Category = "Blueprints Functions|Test")
+	static int Test2(float a, float b, float c); 
 };
