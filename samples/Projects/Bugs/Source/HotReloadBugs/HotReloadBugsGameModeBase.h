@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "HotReloadBugs.h"
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
 #include "HotReloadBugsGameModeBase.generated.h"
